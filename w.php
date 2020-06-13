@@ -1,6 +1,7 @@
 <?php
 	require_once('config.php');
 	require_once('apikey.php');
+	require_once('tg_key.php');
 	$website = "https://opendata.cwb.gov.tw/fileapi/v1/opendataapi/{$dataid}?Authorization={$apikey}&format=JSON";
 	
 	$getweather = file_get_contents($website);
